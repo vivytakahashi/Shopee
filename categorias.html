@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="categorias">
+  <header id="topo" class="topo"></header>
+
+  <main class="container">
+    <h1 class="titulo-pagina"><span data-icone="grid"></span> Categorias</h1>
+    <div class="container--estreito" style="margin:0 auto;padding:0">
+      <nav class="cartao categorias-cartao" id="categorias" aria-label="Categorias"></nav>
+    </div>
+    <div class="barra-filtros">
+      <h2 id="titulo-resultados">Todos os produtos</h2>
+      <label>Ordenar por
+        <select id="ordenar">
+          <option value="relevancia">Relevância</option>
+          <option value="menor">Menor preço</option>
+          <option value="maior">Maior preço</option>
+          <option value="nota">Melhor avaliados</option>
+          <option value="desconto">Maior desconto</option>
+        </select>
+      </label>
+    </div>
+    <div class="lista-produtos" id="resultados"></div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/categorias.js"></script>
+</body>
+</html>

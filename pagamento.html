@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="pagamento">
+  <header id="topo" class="topo"></header>
+
+  <main class="container">
+    <h1 class="titulo-pagina"><span data-icone="cart"></span> Pagamento</h1>
+    <div class="pagamento-grid" id="pagamento">
+      <div class="pagamento-col">
+        <section class="cartao cartao--pad" id="endereco"></section>
+        <div id="envios" class="pagamento-col"></div>
+        <section class="cartao cartao--pad">
+          <h3 style="margin:0 0 6px;font-weight:600">Métodos de pagamento</h3>
+          <div id="metodos"></div>
+        </section>
+      </div>
+      <aside class="pagamento-col">
+        <section class="cartao" style="padding:22px 22px 26px">
+          <div class="cupom-topo"><span data-icone="percent"></span> Cupom de Desconto</div>
+          <div class="cupom-acao"><div id="cupom-aplicado"></div><button class="link-verde" id="selecionar-cupom">Selecione Cupom</button></div>
+          <div class="moedas-linha"><span data-icone="dollar"></span> Moedas Shopee</div>
+          <label class="moedas-resgate"><span>Resgatar <span id="saldo-moedas">0</span> Moedas Shopee<br><small id="valor-moedas"></small></span><input type="checkbox" class="check" id="usar-moedas"></label>
+        </section>
+        <section class="cartao cartao--pad resumo">
+          <h3>Resumo do Pedido</h3>
+          <dl id="resumo"></dl>
+          <div class="resumo__total">Pagamento total <strong id="pagamento-total">R$ 0,00</strong></div>
+          <button class="botao botao--verde botao--bloco" id="fazer-pedido">Fazer pedido</button>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pagamento.js"></script>
+</body>
+</html>

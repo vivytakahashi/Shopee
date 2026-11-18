@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="produto">
+  <header id="topo" class="topo"></header>
+
+  <main class="container" id="pagina-produto">
+    <div class="produto-grid">
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <section class="cartao produto-principal">
+          <div class="galeria">
+            <div class="galeria__principal"><img id="imagem-principal" src="" alt=""></div>
+            <div class="galeria__miniaturas">
+              <button class="galeria__seta" data-galeria="-1" aria-label="Imagem anterior"></button>
+              <div class="galeria__lista" id="miniaturas"></div>
+              <button class="galeria__seta" data-galeria="1" aria-label="Próxima imagem"></button>
+            </div>
+          </div>
+          <div class="produto-info" id="produto-info"></div>
+        </section>
+
+        <section class="cartao acordeao" id="descricao">
+          <button class="acordeao__botao" aria-expanded="false">Descrição <span data-icone="down"></span></button>
+          <div class="acordeao__conteudo"><div><p id="texto-descricao"></p></div></div>
+        </section>
+
+        <section class="cartao avaliacoes" id="avaliacoes"></section>
+      </div>
+
+      <aside style="display:flex;flex-direction:column;gap:22px">
+        <section class="cartao lateral-compra" id="lateral-compra"></section>
+        <section class="cartao loja-cartao" id="loja-cartao"></section>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/produto.js"></script>
+</body>
+</html>

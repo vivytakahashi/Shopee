@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="perfil">
+  <header id="topo" class="topo"></header>
+
+  <main class="container">
+    <h1 class="titulo-pagina titulo-pagina--normal"><span data-icone="user"></span> Perfil</h1>
+    <div class="container--estreito" style="margin:0 auto;padding:0">
+      <section class="cartao perfil-cartao">
+        <div class="perfil-topo">
+          <span class="perfil-topo__usuario"><span class="avatar" data-icone="user"></span> <span id="nome-usuario">User</span></span>
+          <span><strong id="seguindo">0</strong> Seguindo</span>
+          <span><strong id="seguidores">0</strong> Seguidor(es)</span>
+          <button id="configuracoes" aria-label="Configurações"><span data-icone="settings"></span></button>
+        </div>
+        <div class="perfil-atalhos">
+          <a class="perfil-atalho" href="cupons.html"><span data-icone="percent"></span>Cupom<span class="contador oculto" id="qtd-cupons"></span></a>
+          <a class="perfil-atalho" href="moedas.html"><span data-icone="dollar"></span>Moedas</a>
+          <a class="perfil-atalho" href="favoritos.html"><span data-icone="heart"></span>Favoritos<span class="contador oculto" id="qtd-favoritos"></span></a>
+        </div>
+      </section>
+      <section class="cartao perfil-cartao">
+        <div class="perfil-cartao__titulo"><h3>Minhas Compras</h3><a href="minhas-compras.html">Histórico</a></div>
+        <div class="perfil-atalhos" id="atalhos-compras"></div>
+      </section>
+      <section class="cartao perfil-cartao">
+        <div class="perfil-cartao__titulo"><h3>Serviços</h3></div>
+        <div class="perfil-atalhos perfil-atalhos--servicos">
+          <a class="perfil-atalho" href="chat.html"><span data-icone="message"></span>Chat</a>
+          <button class="perfil-atalho" id="acessibilidade"><span data-icone="aa"></span>Acessibilidade</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/perfil.js"></script>
+</body>
+</html>

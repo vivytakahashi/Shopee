@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="chat">
+  <header id="topo" class="topo"></header>
+
+  <main class="container">
+    <h1 class="titulo-pagina"><span data-icone="message"></span> Chat</h1>
+    <div class="chat cartao">
+      <div class="chat__lista">
+        <input class="chat__busca" type="search" id="busca-conversa" placeholder="Buscar loja..." aria-label="Buscar conversa">
+        <div id="conversas"></div>
+      </div>
+      <div class="chat__janela">
+        <div class="chat__cabeca oculto" id="chat-cabeca"></div>
+        <div class="chat__mensagens" id="mensagens" aria-live="polite"><p class="chat__vazio">Escolha uma conversa ao lado</p></div>
+        <form class="chat__form" id="form-mensagem">
+          <label class="sr-only" for="campo-mensagem">Mensagem</label>
+          <input id="campo-mensagem" placeholder="Digite uma mensagem" autocomplete="off" disabled>
+          <button type="submit" aria-label="Enviar"><span data-icone="send"></span></button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

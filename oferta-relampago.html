@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas Relâmpago | Shopee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+  <meta name="description" content="Shopee: compre com frete grátis, cupons de desconto, moedas e ofertas relâmpago.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="oferta">
+  <header id="topo" class="topo"></header>
+
+  <main class="container">
+    <section class="relampago-hero" aria-label="Ofertas relâmpago">
+      <div class="relogios" id="relogios" aria-hidden="true"></div>
+      <div class="relampago-hero__caixa">
+        <h2>Ofertas Relâmpago</h2>
+        <p style="margin:0;font-size:1.2rem">Descontos de até 70% por tempo limitado</p>
+        <div class="relampago-hero__tempo"><span id="h">00</span><span id="m">00</span><span id="s">00</span></div>
+      </div>
+    </section>
+    <div class="barra-relampago">
+      <h2>Ofertas Relâmpago <span data-icone="zap"></span></h2>
+      <div class="barra-relampago__tempo"><span data-icone="clock"></span><div class="horarios" id="horarios"></div></div>
+    </div>
+    <div class="lista-produtos" id="lista-oferta"></div>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/oferta.js"></script>
+</body>
+</html>
